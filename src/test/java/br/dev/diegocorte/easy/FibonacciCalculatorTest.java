@@ -1,7 +1,6 @@
 package br.dev.diegocorte.easy;
 
 import java.math.BigInteger;
-import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -45,7 +44,7 @@ public class FibonacciCalculatorTest {
             BigInteger.valueOf(6765)
         };
         
-        assertTrue(Arrays.equals(expectedSequence, sequence));
+        assertArrayEquals(expectedSequence, sequence);
     }
 
 }
